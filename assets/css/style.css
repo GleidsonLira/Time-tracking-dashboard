@@ -39,3 +39,22 @@ body{
       opacity: 1;
     }
 }
+
+.container{
+    background-color: var(--Darkblue);
+    margin: 1rem;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.upper--container{
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+}
+
+.downward--container{
+    padding:1rem  1.5rem;
+    border-radius: 15px;
+    transition: 400ms ease-in-out;
+}
