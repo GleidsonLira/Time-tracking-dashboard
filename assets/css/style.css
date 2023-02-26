@@ -58,3 +58,26 @@ body{
     border-radius: 15px;
     transition: 400ms ease-in-out;
 }
+
+.activitie--container .upper--container{
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-position: 92% center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+.activitie--container .downward--container{
+    position: relative;
+    margin-top: -1rem;
+    z-index: 5;
+    background-color: inherit;
+
+}
+.downward--container .up, .downward--container .down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+}
