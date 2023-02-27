@@ -106,3 +106,40 @@ body{
     transition: opacity 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
+.up-1{
+    background-color: var(--Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user--photo img{
+    max-height: 70px;
+    max-width: 70px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.dw-1 .time ul{
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+}
+
+.dw-1 .time ul li{
+    color: var(--PaleBlue);
+}
+
+.dw-1 .time ul li:nth-child(2){
+    color: white;
+}
+
+ h1{
+    font-weight: 300;
+}
+
+.activities .downward--container{
+    min-height: 101px;
+    max-height: 101px;
+}
