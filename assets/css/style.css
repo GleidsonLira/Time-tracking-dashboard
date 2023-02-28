@@ -154,12 +154,23 @@ body {
     background-image: url(../img/icon-play.svg);
 }
 
-.up-4{
+.up-4 {
     background-color: var(--Lightred);
     background-image: url(../img/icon-study.svg);
 }
 
-.up-5{
+.up-5 {
     background-color: var(--Limegreen);
     background-image: url(../img/icon-exercise.svg);
 }
+
+.up-6 {
+    background-color: var(--Violet);
+    background-image: url(../img/icon-social.svg);
+}
+
+.up-7 {
+    background-color: var(--Softorange);
+    background-image: url(../img/icon-self-care.svg);
+}
+
