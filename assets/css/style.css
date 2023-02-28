@@ -154,3 +154,12 @@ body {
     background-image: url(../img/icon-play.svg);
 }
 
+.up-4{
+    background-color: var(--Lightred);
+    background-image: url(../img/icon-study.svg);
+}
+
+.up-5{
+    background-color: var(--Limegreen);
+    background-image: url(../img/icon-exercise.svg);
+}
