@@ -174,3 +174,45 @@ body {
     background-image: url(../img/icon-self-care.svg);
 }
 
+/* media queries */
+@media (min-width:852px){
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .activities{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(240px,1fr));
+    }
+
+    .container{
+        width: 240px;
+    }
+
+    .hrs-current{
+        font-size: 2.7rem;
+        padding: .5rem 0;
+    }
+
+    .activities .downward--container{
+        min-height: 167px;
+        max-height: 167px;
+    }
+
+    .downward--container .down{
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    .activities .downward--container:hover{
+        background-color: var(--Desaturatedblue);
+    }
+
+    .dw-1:hover{
+        background-color: var(--Darkblue);
+    }
+
+}
