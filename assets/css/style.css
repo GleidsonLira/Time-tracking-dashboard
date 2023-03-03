@@ -175,7 +175,8 @@ body {
 }
 
 /* media queries */
-@media (min-width:852px){
+
+@media (min-width:852px) {
 
     .wrapper{
         display: flex;
@@ -183,35 +184,36 @@ body {
         
     }
 
-    .activities{
+    .activities {
         display: grid;
         grid-template-columns: repeat(3,minmax(240px,1fr));
     }
 
-    .container{
+    .container {
         width: 240px;
     }
 
-    .hrs-current{
+    .hrs-current {
         font-size: 2.7rem;
         padding: .5rem 0;
     }
 
-    .activities .downward--container{
+    .activities .downward--container {
         min-height: 167px;
         max-height: 167px;
     }
 
-    .downward--container .down{
+    .downward--container .down {
         flex-direction: column;
         align-items: flex-start;
        
     }
-    .activities .downward--container:hover{
+
+    .activities .downward--container:hover {
         background-color: var(--Desaturatedblue);
     }
 
-    .dw-1:hover{
+    .dw-1:hover {
         background-color: var(--Darkblue);
     }
 
@@ -242,6 +244,36 @@ body {
         border-radius: 50%;
         border: 3px solid white;
         
+    }
+
+    .dw-1 {
+        height: 30%;
+    }
+
+    .dw-1 .time ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dw-1 .time ul li {
+        color: var(--PaleBlue);
+    }
+
+    .dw-1 .time ul li:nth-child(2) {
+        padding: 1rem 0;
+    }
+
+    h1 {
+        font-weight: 300;
+    }
+
+    .active {
+        color: white !important;
+    }
+
+    .pale {
+        color: var(--PaleBlue)
     }
 
 }
