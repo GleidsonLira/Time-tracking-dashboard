@@ -15,3 +15,26 @@ function readTextFile(file, callback) {
     }
     rawFile.send(null); 
 }
+
+const paleButton = () => {
+    time.forEach(a => a.style.color = "hsl(236, 100%, 87%)")
+}
+const whiteButton = (x) => {
+    time[x].style.color = "white"
+}
+
+const changeTimeSpan = (x) => {
+    
+    readTextFile("data.json", (text) =>{
+        let data = JSON.parse(text);
+        if(x == 1){
+            lastTime.forEach(function(a, index ) {
+                let day = data[index].timeframes
+                toggleTransitionWithTimeout(a)
+                toggleTransitionWithTimeout(currentTime[index])
+                toggleTransitionWithTimeout(prev[index])
+                prev[index].textContent = "Yesterday- "+ day.daily.previous+"hrs"
+                currentTime[index].textContent =  day.daily.current+"hrs";
+            });
+
+            
