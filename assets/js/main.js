@@ -62,3 +62,19 @@ const changeTimeSpan = (x) => {
 
 });
 }
+
+function toggleTransitionWithTimeout(x) {
+    x.style.display = 'none'
+    x.classList.remove("fade"); // removing the class
+    setTimeout(() => {
+      requestAnimationFrame(() => {
+        // We are manually adding new content and adding class again to node
+        x.style.display = 'inline-block'
+        x.classList.add("fade");
+      });
+    }, 225); // timeout
+  }
+
+time[1].addEventListener("click", function(){changeTimeSpan(1), paleButton(), whiteButton(1)})
+time[2].addEventListener("click", function(){changeTimeSpan(2), paleButton(), whiteButton(2)})
+time[3].addEventListener("click", function(){changeTimeSpan(3), paleButton(), whiteButton(3)})
