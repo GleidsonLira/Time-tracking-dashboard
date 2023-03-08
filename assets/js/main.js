@@ -37,4 +37,28 @@ const changeTimeSpan = (x) => {
                 currentTime[index].textContent =  day.daily.current+"hrs";
             });
 
+            }else if(x == 2){
             
+            lastTime.forEach(function(a, index ) {
+                let day = data[index].timeframes
+                toggleTransitionWithTimeout(a)
+                toggleTransitionWithTimeout(currentTime[index])
+                toggleTransitionWithTimeout(prev[index])
+                prev[index].textContent = "Last Week- "+ day.weekly.previous+"hrs"
+                currentTime[index].textContent = day.weekly.current+"hrs";
+            });
+
+            }else{
+            lastTime.forEach(function(a, index ) {
+                let day = data[index].timeframes
+                toggleTransitionWithTimeout(a)
+                toggleTransitionWithTimeout(currentTime[index])
+                toggleTransitionWithTimeout(prev[index])
+                prev[index].textContent = "Last Month- "+ day.monthly.previous+"hrs";
+                currentTime[index].textContent =  day.monthly.current+"hrs";
+            });
+
+        }
+
+});
+}
